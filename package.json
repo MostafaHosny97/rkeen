@@ -1,0 +1,23 @@
+{
+  "name": "rakeen",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://MostafaHosny97.github.io/rkeen",
+  "description": "",
+  "main": "postcss.config.js",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss-animated": "^1.0.1"
+  }
+}
